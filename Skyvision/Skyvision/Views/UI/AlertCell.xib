@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlertCell" id="UsP-gp-Mmb" customClass="AlertCell" customModule="Skyvision" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Obm-Cw-ui7">
+                <rect key="frame" x="0.0" y="0.0" width="553" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BTP-Hx-keM">
+                        <rect key="frame" x="10" y="10" width="533" height="150"/>
+                        <subviews>
+                            <stackView opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" verticalHuggingPriority="1000" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zbs-7L-9z4" userLabel="Title Stack">
+                                <rect key="frame" x="0.0" y="0.0" width="533" height="15"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cp0-r4-KGK">
+                                        <rect key="frame" x="0.0" y="1.3333333333333321" width="15" height="12.666666666666668"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="edu-aB-3hv"/>
+                                            <constraint firstAttribute="height" constant="15" id="iJl-DH-D34"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region - Alert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDz-S4-Cc7">
+                                        <rect key="frame" x="20" y="0.0" width="513" height="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="asq-Kr-GU3">
+                                <rect key="frame" x="0.0" y="25.000000000000007" width="533" height="80.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uft-2r-XFN">
+                                        <rect key="frame" x="0.0" y="0.0" width="533" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Severity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-ED-VbG">
+                                        <rect key="frame" x="0.0" y="23.666666666666664" width="533" height="56.999999999999993"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="eJm-D2-Eyw">
+                                <rect key="frame" x="0.0" y="115.66666666666667" width="533" height="34.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdG-Of-liZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGq-yS-bqm">
+                                        <rect key="frame" x="427" y="0.0" width="106" height="34.333333333333336"/>
+                                        <color key="tintColor" red="1" green="0.80878549209999995" blue="0.0047500275970000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" imagePadding="5">
+                                            <imageReference key="image" image="info.circle" catalog="system" symbolScale="small"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Learn more">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.80878549211828732" blue="0.0047500275970320249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onLearnMoreTapped:" destination="UsP-gp-Mmb" eventType="touchUpInside" id="PxP-je-8mR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" systemColor="tintColor"/>
+                <constraints>
+                    <constraint firstItem="BTP-Hx-keM" firstAttribute="top" secondItem="Obm-Cw-ui7" secondAttribute="top" constant="10" id="0hZ-4J-5cO"/>
+                    <constraint firstAttribute="trailing" secondItem="BTP-Hx-keM" secondAttribute="trailing" constant="10" id="1re-j4-9ZS"/>
+                    <constraint firstItem="BTP-Hx-keM" firstAttribute="leading" secondItem="Obm-Cw-ui7" secondAttribute="leading" constant="10" id="6mw-o9-5nu"/>
+                    <constraint firstAttribute="bottom" secondItem="BTP-Hx-keM" secondAttribute="bottom" constant="10" id="qks-jH-K7H"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="553" height="170"/>
+            <connections>
+                <outlet property="severityLabel" destination="Mmz-ED-VbG" id="EED-Tq-p9m"/>
+                <outlet property="sourceLabel" destination="TdG-Of-liZ" id="rCD-MF-CQJ"/>
+                <outlet property="summaryLabel" destination="Uft-2r-XFN" id="aD2-gh-Ogh"/>
+                <outlet property="titleLabel" destination="wDz-S4-Cc7" id="2eH-gI-cTa"/>
+            </connections>
+            <point key="canvasLocation" x="165.38461538461539" y="55.805687203791464"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="109"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

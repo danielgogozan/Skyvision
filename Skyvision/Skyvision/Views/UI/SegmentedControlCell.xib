@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SegmentedControlCell" id="5Bg-vT-qsn" customClass="SegmentedControlCell" customModule="Skyvision" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="23r-yn-qVS">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ufO-bs-FtA">
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="159"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pnn-HU-NPm">
+                                <rect key="frame" x="0.0" y="0.0" width="312" height="160"/>
+                                <segments>
+                                    <segment title="Daily Forecast"/>
+                                    <segment title="Hourly Forecast"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemIndigoColor"/>
+                            </segmentedControl>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-nb-cwF">
+                        <rect key="frame" x="0.0" y="158" width="312" height="1"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="A40-yk-fj9"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VcS-X0-4Nm">
+                        <rect key="frame" x="10" y="157" width="152" height="2"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="152" id="GqH-yX-ipG"/>
+                            <constraint firstAttribute="height" constant="2" id="ePd-zK-q3d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xfk-nb-cwF" firstAttribute="leading" secondItem="23r-yn-qVS" secondAttribute="leading" id="0zm-k5-3H0"/>
+                    <constraint firstItem="ufO-bs-FtA" firstAttribute="leading" secondItem="23r-yn-qVS" secondAttribute="leading" id="1fK-l0-WnQ"/>
+                    <constraint firstItem="ufO-bs-FtA" firstAttribute="top" secondItem="23r-yn-qVS" secondAttribute="top" id="6de-rB-3Nd"/>
+                    <constraint firstAttribute="bottom" secondItem="ufO-bs-FtA" secondAttribute="bottom" id="95X-0W-lLZ"/>
+                    <constraint firstItem="ufO-bs-FtA" firstAttribute="bottom" secondItem="Xfk-nb-cwF" secondAttribute="bottom" id="9mE-nc-IHz"/>
+                    <constraint firstItem="VcS-X0-4Nm" firstAttribute="leading" secondItem="ufO-bs-FtA" secondAttribute="leading" constant="10" id="J5l-HQ-RuP"/>
+                    <constraint firstAttribute="trailing" secondItem="ufO-bs-FtA" secondAttribute="trailing" id="P5E-NL-cid"/>
+                    <constraint firstAttribute="trailing" secondItem="Xfk-nb-cwF" secondAttribute="trailing" id="W7b-YO-Ss6"/>
+                    <constraint firstAttribute="bottom" secondItem="VcS-X0-4Nm" secondAttribute="bottom" id="qSG-E6-mDl"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="312" height="159"/>
+            <connections>
+                <outlet property="segmentedControl" destination="pnn-HU-NPm" id="S3Q-Ha-Dky"/>
+                <outlet property="stackView" destination="ufO-bs-FtA" id="AHH-f7-O1q"/>
+                <outlet property="underlineView" destination="VcS-X0-4Nm" id="aeg-mS-BYc"/>
+                <outlet property="underlineWidth" destination="GqH-yX-ipG" id="TnE-UP-M5d"/>
+            </connections>
+            <point key="canvasLocation" x="355.38461538461536" y="-39.099526066350712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

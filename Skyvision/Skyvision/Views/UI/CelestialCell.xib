@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CelestialCell" id="kqq-k4-3Q0" customClass="CelestialCell" customModule="Skyvision" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="265"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ugD-JP-rFp">
+                <rect key="frame" x="0.0" y="0.0" width="407" height="265"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-Ia-fNX">
+                        <rect key="frame" x="5" y="5" width="397" height="255"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lyN-JF-Dtd" userLabel="Sun">
+                                <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="255"/>
+                                <subviews>
+                                    <stackView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k9p-R8-X9A">
+                                        <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="15"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GGZ-aG-IOh">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="L21-hz-AH9"/>
+                                                    <constraint firstAttribute="width" constant="15" id="wdS-iA-KLF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-oT-K5T">
+                                                <rect key="frame" x="20" y="0.0" width="168.66666666666666" height="15"/>
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rb3-Vk-XM9">
+                                        <rect key="frame" x="0.0" y="55" width="188.66666666666666" height="105"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dVb-Hx-GKN">
+                                                <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="15"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunrise" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4OT-ei-oUB">
+                                                        <rect key="frame" x="0.0" y="0.66666666666666607" width="15" height="14"/>
+                                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="15" id="66T-bv-2RT"/>
+                                                            <constraint firstAttribute="height" constant="15" id="Hdc-rX-jSS"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb7-Cl-Z3L">
+                                                        <rect key="frame" x="20" y="0.0" width="168.66666666666666" height="15"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FuX-R6-MtK">
+                                                <rect key="frame" x="0.0" y="30" width="188.66666666666666" height="15"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-WH-mdN">
+                                                        <rect key="frame" x="0.0" y="0.66666666666666607" width="15" height="14"/>
+                                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="BYW-z6-Kmi"/>
+                                                            <constraint firstAttribute="width" constant="15" id="Y1i-F6-k5g"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgO-1V-vv7">
+                                                        <rect key="frame" x="20" y="0.0" width="168.66666666666666" height="15"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-qi-uhz">
+                                                <rect key="frame" x="0.0" y="60" width="188.66666666666666" height="15"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.and.horizon" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ahk-4y-pd7">
+                                                        <rect key="frame" x="0.0" y="2" width="15" height="10.333333333333332"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="SdW-4Z-iDk"/>
+                                                            <constraint firstAttribute="width" constant="15" id="zJ2-yF-FT9"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abu-Oz-SPL">
+                                                        <rect key="frame" x="20" y="0.0" width="168.66666666666666" height="15"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5Tc-og-y2u">
+                                                <rect key="frame" x="0.0" y="90" width="188.66666666666666" height="15"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.dust" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kih-pj-jJk">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666666785" width="15" height="16.666666666666668"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="15" id="GoP-2E-kWz"/>
+                                                            <constraint firstAttribute="height" constant="15" id="aae-WN-ChQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-Us-Ri5">
+                                                        <rect key="frame" x="20" y="0.0" width="168.66666666666666" height="15"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dNP-oZ-gLp" userLabel="spacer">
+                                        <rect key="frame" x="0.0" y="200" width="188.66666666666666" height="55"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-Ip-KM8" userLabel="Moon">
+                                <rect key="frame" x="208.66666666666663" y="0.0" width="188.33333333333337" height="255"/>
+                                <subviews>
+                                    <stackView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iu6-W4-WdL" userLabel="Moon Title Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="15"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0pE-45-CbA">
+                                                <rect key="frame" x="0.0" y="0.99999999999999822" width="15" height="13.333333333333336"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="i2r-ht-cEj"/>
+                                                    <constraint firstAttribute="width" constant="15" id="yyZ-Lr-DLx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qud-Ly-ImJ">
+                                                <rect key="frame" x="20" y="0.0" width="168.33333333333334" height="15"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-v2-w12" userLabel="Moon Info Stack">
+                                        <rect key="frame" x="0.0" y="30" width="188.33333333333334" height="225"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-Fu-W3h" userLabel="Moon Icon Stack">
+                                                <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="134"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="---" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA7-dw-0ZV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon-waning-gibbous" translatesAutoresizingMaskIntoConstraints="NO" id="HQX-9Y-vl0">
+                                                        <rect key="frame" x="0.0" y="34" width="188.33333333333334" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="eo5-E6-esh"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SoV-aa-wSZ">
+                                                <rect key="frame" x="85.666666666666657" y="144" width="16.666666666666671" height="81"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eko-Zf-GAT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="16.666666666666668" height="16.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="---" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXM-hu-aBb">
+                                                        <rect key="frame" x="0.0" y="16.333333333333343" width="16.666666666666668" height="64.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7N-p0-MPc">
+                        <rect key="frame" x="203" y="10" width="1" height="245"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="dZe-BC-gbG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="tintColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ebT-Ia-fNX" secondAttribute="trailing" constant="5" id="3bK-xI-Jqo"/>
+                    <constraint firstAttribute="bottom" secondItem="F7N-p0-MPc" secondAttribute="bottom" constant="10" id="CuF-oD-X1c"/>
+                    <constraint firstItem="ebT-Ia-fNX" firstAttribute="top" secondItem="ugD-JP-rFp" secondAttribute="top" constant="5" id="Skk-cE-E4C"/>
+                    <constraint firstItem="ebT-Ia-fNX" firstAttribute="leading" secondItem="ugD-JP-rFp" secondAttribute="leading" constant="5" id="ZRA-Ke-02b"/>
+                    <constraint firstItem="F7N-p0-MPc" firstAttribute="top" secondItem="ugD-JP-rFp" secondAttribute="top" constant="10" id="faC-CI-nDu"/>
+                    <constraint firstItem="F7N-p0-MPc" firstAttribute="centerX" secondItem="ugD-JP-rFp" secondAttribute="centerX" id="i1a-d3-E2V"/>
+                    <constraint firstItem="F7N-p0-MPc" firstAttribute="centerY" secondItem="ugD-JP-rFp" secondAttribute="centerY" id="ji9-tB-4V6"/>
+                    <constraint firstAttribute="bottom" secondItem="ebT-Ia-fNX" secondAttribute="bottom" constant="5" id="tri-at-g1G"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="407" height="265"/>
+            <connections>
+                <outlet property="moonPhaseIcon" destination="HQX-9Y-vl0" id="VM4-hu-eO2"/>
+                <outlet property="moonPhaseLabel" destination="QA7-dw-0ZV" id="34B-zk-Uv8"/>
+                <outlet property="moonriseLabel" destination="eko-Zf-GAT" id="yjp-MD-Lrl"/>
+                <outlet property="moonsetLabel" destination="wXM-hu-aBb" id="KKf-D8-JhQ"/>
+                <outlet property="solarMidnightLabel" destination="abu-Oz-SPL" id="Jan-t2-CV1"/>
+                <outlet property="solarNoonLabel" destination="UYk-Us-Ri5" id="h6S-Me-wpj"/>
+                <outlet property="sunriseLabel" destination="hb7-Cl-Z3L" id="oXg-Ag-QGJ"/>
+                <outlet property="sunsetLabel" destination="GgO-1V-vv7" id="ATk-jA-UNX"/>
+            </connections>
+            <point key="canvasLocation" x="188.46153846153845" y="122.6303317535545"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="moon-waning-gibbous" width="375" height="379"/>
+        <image name="moon.fill" catalog="system" width="128" height="123"/>
+        <image name="sun.and.horizon" catalog="system" width="128" height="79"/>
+        <image name="sun.dust" catalog="system" width="128" height="120"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
+        <image name="sunrise" catalog="system" width="128" height="97"/>
+        <image name="sunset" catalog="system" width="128" height="97"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
