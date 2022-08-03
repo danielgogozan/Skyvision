@@ -12,7 +12,7 @@ Other topics touched:
 
 # Explore
 ![App Flow](https://i.ibb.co/7bM04cf/image-3.png)
-
+<img src="[targetGifUrl](https://i.ibb.co/7bM04cf/image-3.png)" width="400">
 [App demo here](https://streamable.com/qkhcot)
 
 # Note
