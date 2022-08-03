@@ -13,7 +13,7 @@ Other topics touched:
 # Explore
 ![App Flow](https://i.ibb.co/7bM04cf/image-3.png)
 
-![App demo](https://streamable.com/qkhcot)
+[App demo here](https://streamable.com/qkhcot)
 
 # Note
 By default, the app/widget uses the user's current location for displaying the weather. 
