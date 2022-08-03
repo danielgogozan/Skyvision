@@ -1,14 +1,14 @@
 # Skyvision
 Skyvision is a weather app that uses the new Apple Weather Services API called **WeatherKit**, introduced in WWDC22. 
-Moreover, it provides widgets for lockscreen, aka accessory widgets, also introduced this year in iOS16.
+Moreover, it provides **widgets for lockscreen**, aka accessory widgets, also introduced this year in iOS16.
 
 # Purpose
 This app is a demonstration on how to get started with WeatherKit API and how to use the new accessory widgets who periodically reload their content.
 
 Other topics touched:
-- Reload widgets via timeline configuration
-- Rely on Intent configuration, because user should be able to choose the location for which he wants to see the weather details
-- Deeplink URL from widgets to main app
+- **Reload widgets via timeline** configuration
+- Rely on **Intent configuration**, because user should be able to choose the location for which he wants to see the weather details
+- **Deeplink** URL from widgets to main app
 
 # Explore
 ![App Flow](https://www.simpleimageresizer.com/_uploads/photos/546a3772/image_3_50.png)
