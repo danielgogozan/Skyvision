@@ -11,8 +11,8 @@ Other topics touched:
 - Deeplink URL from widgets to main app
 
 # Explore
-![App Flow](https://i.ibb.co/7bM04cf/image-3.png)
-<img src="[targetGifUrl](https://i.ibb.co/7bM04cf/image-3.png)" width="400">
+![App Flow](https://www.simpleimageresizer.com/_uploads/photos/546a3772/image_3_50.png)
+
 [App demo here](https://streamable.com/qkhcot)
 
 # Note
