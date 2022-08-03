@@ -19,5 +19,8 @@ Other topics touched:
 By default, the app/widget uses the user's current location for displaying the weather. 
 In order to change this, in the app you can search for various locations and for the widgets it is fully customizable because it relies on intent configuration.
 
+Xcode 14 required.
+
 [WeatherKit](https://developer.apple.com/videos/play/wwdc2022/10003/)
+
 [Complications and widgets](https://developer.apple.com/videos/play/wwdc2022/10050/)
